@@ -6,8 +6,10 @@ const handleFocus = ({ target }) => {
 }
 
 const handleFocusOut = ({ target }) => {
-    const span = target.previousElementSibling;
-    span.classList.remove('span-active');
+    if(target.value == '') {
+        const span = target.previousElementSibling;
+        span.classList.remove('span-active');
+    }
 }
 
 inputs.forEach((input) => input.addEventListener('focus', handleFocus));
