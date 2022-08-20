@@ -38,7 +38,7 @@
     margin-bottom: 80px;
 }
 
-.login_tittle {
+.login_title {
     color: var(--deep-grey);
     font-size: 1.5em;
     margin-bottom: 30px;
@@ -70,6 +70,7 @@
     color: var(--medium-grey);
     margin: 20px;
     cursor: text;
+    transition: all 200ms ease;
 }
 
 /* focus is a pseudo-classe too */
@@ -78,3 +79,7 @@
     border: 2px solid var(--deep-grey);
 }
 
+.login_label .span-active {
+    font-size: 0.7em;
+    margin: 8px 10px;
+}
